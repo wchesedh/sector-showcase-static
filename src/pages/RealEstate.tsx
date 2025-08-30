@@ -1,3 +1,4 @@
+
 import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,17 +7,17 @@ import { Building, TrendingUp, Home, MapPin } from 'lucide-react';
 
 const RealEstate = () => {
   const projects = [
-    { name: 'Metropolitan Business District', type: 'Commercial', units: '450 units', investment: '$180M' },
-    { name: 'Green Valley Residences', type: 'Residential', units: '1,200 units', investment: '$95M' },
-    { name: 'Innovation Tech Park', type: 'Mixed Use', units: '300 units', investment: '$220M' },
-    { name: 'Waterfront Luxury Complex', type: 'Luxury', units: '80 units', investment: '$65M' },
+    { name: 'Malaybalay City Center', type: 'Commercial', units: '180 units', investment: '₱2.4B' },
+    { name: 'Valencia Highlands', type: 'Residential', units: '450 units', investment: '₱1.8B' },
+    { name: 'Don Carlos Business Park', type: 'Mixed Use', units: '120 units', investment: '₱3.2B' },
+    { name: 'Manolo Fortich Estates', type: 'Residential', units: '200 units', investment: '₱1.2B' },
   ];
 
   const highlights = [
-    '23% property value growth (YoY)',
-    'Green building certification program',
-    'Smart city infrastructure integration',
-    'Foreign investment incentives'
+    '18% property value growth (YoY)',
+    'Green building initiatives',
+    'Smart infrastructure development',
+    'Housing programs for OFWs'
   ];
 
   return (
@@ -32,9 +33,9 @@ const RealEstate = () => {
         <div className="absolute inset-0 bg-gradient-realestate opacity-80" />
         <div className="relative z-10 container mx-auto px-6 h-full flex items-center">
           <div className="text-white">
-            <h1 className="text-5xl font-bold mb-4">Real Estate Sector</h1>
+            <h1 className="text-5xl font-bold mb-4">Bukidnon Real Estate</h1>
             <p className="text-xl text-realestate-foreground/90 max-w-2xl">
-              Modern developments and sustainable urban growth opportunities
+              Strategic development opportunities in Northern Mindanao's growing economy
             </p>
           </div>
         </div>
@@ -46,23 +47,23 @@ const RealEstate = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center text-realestate-foreground">
               <Building className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">$1.2B</div>
+              <div className="text-3xl font-bold">₱28B</div>
               <div className="text-sm">Market Value</div>
             </div>
             <div className="text-center text-realestate-foreground">
               <Home className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">45K</div>
+              <div className="text-3xl font-bold">12K</div>
               <div className="text-sm">Properties</div>
             </div>
             <div className="text-center text-realestate-foreground">
               <TrendingUp className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">23%</div>
+              <div className="text-3xl font-bold">18%</div>
               <div className="text-sm">Growth Rate</div>
             </div>
             <div className="text-center text-realestate-foreground">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">12</div>
-              <div className="text-sm">Development Zones</div>
+              <div className="text-3xl font-bold">8</div>
+              <div className="text-sm">City Centers</div>
             </div>
           </div>
         </div>
@@ -72,7 +73,7 @@ const RealEstate = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Major Projects */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">Major Projects</h2>
+            <h2 className="text-3xl font-bold mb-6">Major Development Projects</h2>
             <div className="space-y-4">
               {projects.map((project, index) => (
                 <Card key={index} className="hover:shadow-card transition-shadow">
@@ -120,7 +121,7 @@ const RealEstate = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Investment Opportunities</h3>
                 <p className="text-muted-foreground mb-4">
-                  Explore commercial and residential development opportunities with government support.
+                  Explore residential and commercial development opportunities with provincial government incentives.
                 </p>
                 <Button variant="realestate">
                   Investment Portfolio

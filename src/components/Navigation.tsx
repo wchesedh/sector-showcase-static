@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Building2, Coffee, Laptop, MapPin, Home } from 'lucide-react';
@@ -22,7 +23,7 @@ const Navigation = () => {
               <Building2 className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">GovPortal</h1>
+              <h1 className="text-xl font-bold text-foreground">Bukidnon Portal</h1>
               <p className="text-xs text-muted-foreground">Economic Development</p>
             </div>
           </Link>

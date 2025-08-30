@@ -1,3 +1,4 @@
+
 import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,17 +7,17 @@ import { Plane, MapPin, Star, Camera } from 'lucide-react';
 
 const Tourism = () => {
   const destinations = [
-    { name: 'Paradise Beach Resort', type: 'Beach Destination', visitors: '450K/year', rating: '4.8' },
-    { name: 'Mountain Heritage Park', type: 'Eco Tourism', visitors: '280K/year', rating: '4.6' },
-    { name: 'Cultural Heritage Center', type: 'Cultural Site', visitors: '320K/year', rating: '4.7' },
-    { name: 'Adventure Sports Hub', type: 'Adventure Tourism', visitors: '180K/year', rating: '4.9' },
+    { name: 'Dahilayan Adventure Park', type: 'Adventure Tourism', visitors: '180K/year', rating: '4.7' },
+    { name: 'Mount Kitanglad Range', type: 'Eco Tourism', visitors: '65K/year', rating: '4.8' },
+    { name: 'Kaamulan Festival Grounds', type: 'Cultural Site', visitors: '250K/year', rating: '4.6' },
+    { name: 'Pineapple Plantation Tours', type: 'Agritourism', visitors: '120K/year', rating: '4.5' },
   ];
 
   const attractions = [
-    'UNESCO World Heritage Sites (3)',
-    'National Parks & Reserves (12)',
-    'Cultural Festivals Year-round',
-    'Adventure Sports Activities'
+    'Mount Kitanglad Natural Park (UNESCO)',
+    'Pulangi River System',
+    'Indigenous Cultural Villages',
+    'Highland Agricultural Tours'
   ];
 
   return (
@@ -32,9 +33,9 @@ const Tourism = () => {
         <div className="absolute inset-0 bg-gradient-tourism opacity-80" />
         <div className="relative z-10 container mx-auto px-6 h-full flex items-center">
           <div className="text-white">
-            <h1 className="text-5xl font-bold mb-4">Tourism Sector</h1>
+            <h1 className="text-5xl font-bold mb-4">Bukidnon Tourism</h1>
             <p className="text-xl text-tourism-foreground/90 max-w-2xl">
-              Discover breathtaking destinations and rich cultural experiences
+              Experience the natural wonders and rich indigenous culture of Northern Mindanao
             </p>
           </div>
         </div>
@@ -46,22 +47,22 @@ const Tourism = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center text-tourism-foreground">
               <Plane className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">2.4M</div>
+              <div className="text-3xl font-bold">615K</div>
               <div className="text-sm">Annual Visitors</div>
             </div>
             <div className="text-center text-tourism-foreground">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">150+</div>
-              <div className="text-sm">Attractions</div>
+              <div className="text-3xl font-bold">85+</div>
+              <div className="text-sm">Tourist Spots</div>
             </div>
             <div className="text-center text-tourism-foreground">
               <Star className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">4.6</div>
+              <div className="text-3xl font-bold">4.5</div>
               <div className="text-sm">Avg. Rating</div>
             </div>
             <div className="text-center text-tourism-foreground">
               <Camera className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">$580M</div>
+              <div className="text-3xl font-bold">₱8.2B</div>
               <div className="text-sm">Tourism Revenue</div>
             </div>
           </div>
@@ -120,7 +121,7 @@ const Tourism = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Tourism Development</h3>
                 <p className="text-muted-foreground mb-4">
-                  Sustainable tourism initiatives and infrastructure development projects.
+                  Sustainable ecotourism and cultural preservation initiatives across Bukidnon's natural and cultural sites.
                 </p>
                 <Button variant="tourism">
                   View Development Plans

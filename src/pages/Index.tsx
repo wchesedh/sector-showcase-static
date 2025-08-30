@@ -1,3 +1,4 @@
+
 import HeroSection from '@/components/HeroSection';
 import StatsSection from '@/components/StatsSection';
 import SectorCard from '@/components/SectorCard';
@@ -11,46 +12,46 @@ const Index = () => {
   const sectors = [
     {
       title: 'Coffee Sector',
-      description: 'Premium coffee production and export with sustainable farming practices',
+      description: 'Premium highland Arabica coffee from the mountains of Northern Mindanao',
       image: coffeeImage,
       path: '/coffee',
       gradient: 'from-coffee/80 to-coffee-light/80',
       stats: [
-        { value: '$850M', label: 'Export Revenue' },
-        { value: '125K', label: 'Farmers' }
+        { value: '₱2.8B', label: 'Annual Production' },
+        { value: '25K', label: 'Coffee Farmers' }
       ]
     },
     {
       title: 'Technology',
-      description: 'Digital innovation driving economic transformation across industries',
+      description: 'Digital innovation and IT services driving Bukidnon\'s modernization',
       image: techImage,
       path: '/tech',
       gradient: 'from-tech/80 to-tech-light/80',
       stats: [
-        { value: '340+', label: 'Companies' },
-        { value: '22K', label: 'Tech Workers' }
+        { value: '120+', label: 'Tech Companies' },
+        { value: '3.2K', label: 'IT Professionals' }
       ]
     },
     {
       title: 'Tourism',
-      description: 'Rich cultural heritage and natural attractions drawing global visitors',
+      description: 'Natural wonders and rich indigenous culture in the heart of Mindanao',
       image: tourismImage,
       path: '/tourism',
       gradient: 'from-tourism/80 to-tourism-light/80',
       stats: [
-        { value: '2.4M', label: 'Annual Visitors' },
-        { value: '$580M', label: 'Revenue' }
+        { value: '615K', label: 'Annual Visitors' },
+        { value: '₱8.2B', label: 'Tourism Revenue' }
       ]
     },
     {
       title: 'Real Estate',
-      description: 'Modern urban development and infrastructure investment opportunities',
+      description: 'Strategic development opportunities in Northern Mindanao\'s growing cities',
       image: realEstateImage,
       path: '/real-estate',
       gradient: 'from-realestate/80 to-realestate-light/80',
       stats: [
-        { value: '$1.2B', label: 'Market Value' },
-        { value: '23%', label: 'Growth Rate' }
+        { value: '₱28B', label: 'Market Value' },
+        { value: '18%', label: 'Growth Rate' }
       ]
     }
   ];
@@ -66,7 +67,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Economic Sectors</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Explore the key sectors driving our economic growth and discover investment opportunities
+              Explore the key sectors driving Bukidnon's economic growth and discover investment opportunities
             </p>
           </div>
           

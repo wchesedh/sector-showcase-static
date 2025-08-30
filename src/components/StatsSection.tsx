@@ -1,9 +1,10 @@
+
 const StatsSection = () => {
   const stats = [
-    { value: '$2.4B', label: 'Total Investment', sublabel: 'Last 12 months' },
-    { value: '450+', label: 'Active Projects', sublabel: 'Across all sectors' },
-    { value: '28%', label: 'GDP Growth', sublabel: 'Year over year' },
-    { value: '15K+', label: 'Jobs Created', sublabel: 'New positions' },
+    { value: '₱45.2B', label: 'Provincial GDP', sublabel: 'Annual output' },
+    { value: '280+', label: 'Active Projects', sublabel: 'Across all sectors' },
+    { value: '12%', label: 'Economic Growth', sublabel: 'Year over year' },
+    { value: '8.5K+', label: 'Jobs Created', sublabel: 'New positions' },
   ];
 
   return (

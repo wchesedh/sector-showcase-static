@@ -1,3 +1,4 @@
+
 import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,17 +7,17 @@ import { TrendingUp, Users, MapPin, Award } from 'lucide-react';
 
 const Coffee = () => {
   const companies = [
-    { name: 'Premium Coffee Co.', type: 'Exporter', employees: '1,200+', location: 'Central Region' },
-    { name: 'Arabica Farms Ltd.', type: 'Producer', employees: '800+', location: 'Highland Valley' },
-    { name: 'Coffee Processing Inc.', type: 'Processor', employees: '450+', location: 'Industrial Zone' },
-    { name: 'Specialty Roasters', type: 'Roaster', employees: '120+', location: 'Urban District' },
+    { name: 'Bukidnon Coffee Growers Association', type: 'Cooperative', employees: '2,500+', location: 'Valencia City' },
+    { name: 'Monks Blend Coffee', type: 'Processor', employees: '150+', location: 'Malaybalay City' },
+    { name: 'Café Amadeo Bukidnon', type: 'Roaster', employees: '85+', location: 'Don Carlos' },
+    { name: 'Highland Coffee Farm Co-op', type: 'Producer', employees: '1,200+', location: 'Lantapan' },
   ];
 
   const achievements = [
-    'World\'s 3rd largest coffee exporter',
-    'Organic certification for 60% of farms',
-    'Fair Trade certified operations',
-    'Sustainable farming practices leader'
+    'Top 5 coffee producing province in PH',
+    'Organic Arabica specialty grade',
+    'Fair Trade certified farms',
+    '15,000+ hectares coffee plantation'
   ];
 
   return (
@@ -32,9 +33,9 @@ const Coffee = () => {
         <div className="absolute inset-0 bg-gradient-coffee opacity-80" />
         <div className="relative z-10 container mx-auto px-6 h-full flex items-center">
           <div className="text-white">
-            <h1 className="text-5xl font-bold mb-4">Coffee Sector</h1>
+            <h1 className="text-5xl font-bold mb-4">Bukidnon Coffee Sector</h1>
             <p className="text-xl text-coffee-foreground/90 max-w-2xl">
-              Leading global coffee production with sustainable practices and premium quality
+              Premium highland Arabica coffee from the mountains of Northern Mindanao
             </p>
           </div>
         </div>
@@ -46,22 +47,22 @@ const Coffee = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center text-coffee-foreground">
               <TrendingUp className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">$850M</div>
-              <div className="text-sm">Export Revenue</div>
+              <div className="text-3xl font-bold">₱2.8B</div>
+              <div className="text-sm">Annual Production</div>
             </div>
             <div className="text-center text-coffee-foreground">
               <Users className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">125K</div>
-              <div className="text-sm">Farmers</div>
+              <div className="text-3xl font-bold">25K</div>
+              <div className="text-sm">Coffee Farmers</div>
             </div>
             <div className="text-center text-coffee-foreground">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">89</div>
+              <div className="text-3xl font-bold">45</div>
               <div className="text-sm">Cooperatives</div>
             </div>
             <div className="text-center text-coffee-foreground">
               <Award className="h-8 w-8 mx-auto mb-3" />
-              <div className="text-3xl font-bold">4.2M</div>
+              <div className="text-3xl font-bold">15K</div>
               <div className="text-sm">Hectares</div>
             </div>
           </div>
@@ -72,7 +73,7 @@ const Coffee = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Major Companies */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">Major Companies</h2>
+            <h2 className="text-3xl font-bold mb-6">Major Coffee Organizations</h2>
             <div className="space-y-4">
               {companies.map((company, index) => (
                 <Card key={index} className="hover:shadow-card transition-shadow">
@@ -86,7 +87,7 @@ const Coffee = () => {
                     <div className="text-muted-foreground text-sm space-y-1">
                       <div className="flex items-center gap-2">
                         <Users className="h-4 w-4" />
-                        <span>{company.employees} employees</span>
+                        <span>{company.employees} members/employees</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4" />
@@ -101,7 +102,7 @@ const Coffee = () => {
 
           {/* Sector Achievements */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">Sector Achievements</h2>
+            <h2 className="text-3xl font-bold mb-6">Coffee Industry Highlights</h2>
             <Card className="mb-6">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-coffee">Recognition & Standards</h3>
@@ -120,7 +121,7 @@ const Coffee = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Investment Opportunities</h3>
                 <p className="text-muted-foreground mb-4">
-                  Explore sustainable coffee farming, processing technology, and export infrastructure projects.
+                  Explore coffee processing facilities, specialty roasting, and agrotourism opportunities in Bukidnon's highland regions.
                 </p>
                 <Button className="bg-coffee hover:bg-coffee-light">
                   View Investment Guide
