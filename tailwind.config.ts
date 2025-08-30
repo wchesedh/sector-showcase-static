@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+					dark: 'hsl(var(--primary-dark))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +54,26 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				coffee: {
+					DEFAULT: 'hsl(var(--coffee))',
+					light: 'hsl(var(--coffee-light))',
+					foreground: 'hsl(var(--coffee-foreground))'
+				},
+				tech: {
+					DEFAULT: 'hsl(var(--tech))',
+					light: 'hsl(var(--tech-light))',
+					foreground: 'hsl(var(--tech-foreground))'
+				},
+				tourism: {
+					DEFAULT: 'hsl(var(--tourism))',
+					light: 'hsl(var(--tourism-light))',
+					foreground: 'hsl(var(--tourism-foreground))'
+				},
+				realestate: {
+					DEFAULT: 'hsl(var(--realestate))',
+					light: 'hsl(var(--realestate-light))',
+					foreground: 'hsl(var(--realestate-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +84,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-coffee': 'var(--gradient-coffee)',
+				'gradient-tech': 'var(--gradient-tech)',
+				'gradient-tourism': 'var(--gradient-tourism)',
+				'gradient-realestate': 'var(--gradient-realestate)'
+			},
+			boxShadow: {
+				'primary': 'var(--shadow-primary)',
+				'sector': 'var(--shadow-sector)',
+				'card': 'var(--shadow-card)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

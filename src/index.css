@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Government Portal Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
@@ -17,10 +15,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Government Blue Theme */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 221 83% 65%;
+    --primary-dark: 221 83% 40%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 214 32% 91%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -29,14 +30,48 @@ All colors MUST be HSL.
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
+    /* Sector-specific colors */
+    --coffee: 25 75% 40%;
+    --coffee-light: 25 75% 55%;
+    --coffee-foreground: 0 0% 100%;
+    
+    --tech: 260 84% 57%;
+    --tech-light: 260 84% 70%;
+    --tech-foreground: 0 0% 100%;
+    
+    --tourism: 142 76% 36%;
+    --tourism-light: 142 76% 50%;
+    --tourism-foreground: 0 0% 100%;
+    
+    --realestate: 215 25% 27%;
+    --realestate-light: 215 25% 40%;
+    --realestate-foreground: 0 0% 100%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
+    --gradient-coffee: linear-gradient(135deg, hsl(var(--coffee)), hsl(var(--coffee-light)));
+    --gradient-tech: linear-gradient(135deg, hsl(var(--tech)), hsl(var(--tech-light)));
+    --gradient-tourism: linear-gradient(135deg, hsl(var(--tourism)), hsl(var(--tourism-light)));
+    --gradient-realestate: linear-gradient(135deg, hsl(var(--realestate)), hsl(var(--realestate-light)));
+
+    /* Shadows */
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-sector: 0 20px 40px -10px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -96,10 +131,14 @@ All colors MUST be HSL.
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border transition-smooth;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
   }
 }
