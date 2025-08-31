@@ -37,8 +37,8 @@ const HeroSection = () => {
           </Button>
           <Button 
             size="lg" 
-            variant="outline" 
-            className="text-lg px-8 py-4 border-white text-white bg-white/10 hover:bg-white hover:text-primary backdrop-blur-sm"
+            variant="default" 
+            className="text-lg px-8 py-4"
           >
             Investment Guide
           </Button>
