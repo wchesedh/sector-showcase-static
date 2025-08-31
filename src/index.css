@@ -131,7 +131,7 @@
 
 @layer base {
   * {
-    @apply border-border ease-smooth;
+    @apply border-border transition-colors;
   }
 
   body {
